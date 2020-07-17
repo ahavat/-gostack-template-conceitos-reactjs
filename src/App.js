@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import api from './services/api';
 
 import "./styles.css";
 
@@ -16,7 +17,6 @@ function App() {
       <ul data-testid="repository-list">
         <li>
           Repositório 1
-
           <button onClick={() => handleRemoveRepository(1)}>
             Remover
           </button>
